@@ -1,0 +1,33 @@
+From aaa3e24eec1fe2cc65559fab52f852ea0e2c2038 Mon Sep 17 00:00:00 2001
+From: Marinus Veit <mveit@hm.edu>
+Date: Mon, 16 Mar 2020 23:37:02 +0100
+Subject: [PATCH 1/1] Deinstallationsinformationen hinzugefuegt
+
+---
+ INSTALL.txt | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+diff --git a/INSTALL.txt b/INSTALL.txt
+index e8c911f..226c400 100644
+--- a/INSTALL.txt
++++ b/INSTALL.txt
+@@ -2,3 +2,15 @@ Zum installieren der Haskell Plattform unter Debian führen Sie folgendes
+ Kommando aus:
+ 
+ > aptitude install haskell-platform
++
++
++Uninstall just haskell-platform:
++sudo apt-get remove haskell-platform
++
++This will remove just the haskell-platform package itself.
++
++
++Uninstall haskell-platform and its dependencies
++sudo apt-get remove --auto-remove haskell-platform
++
++This will remove the haskell-platform package and any other dependant packages which are no longer needed.
+\ No newline at end of file
+-- 
+2.23.0.windows.1
+
